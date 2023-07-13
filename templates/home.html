@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Photographer</title>
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+  
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <!-- <a class="navbar-brand" href="#">Wedding Graph</a> -->
+        <a href="#" style="color: white;"><span class="glyphicon glyphicon-heart"></span> Wedding Graph</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>  
+
+
+  
+<div class="container">
+   
+    <h1>Welcome to Wedding Photographer</h1>
+    <p>Capturing beautiful moments that last a lifetime.</p>
+  </div>
+  
+  
+  <section id="portfolio">
+    <h2>Portfolio</h2>
+    <div  class="gallery">
+      <img src="{% static 'images/image1.jpg' %}" alt="Wedding Photo 1">
+      <img src="{% static 'images/image2.jpg' %}" alt="Wedding Photo 2">
+      <img src="{% static 'images/image3.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+      <img src="{% static 'images/image4.jpg' %}" alt="Wedding Photo 3">
+
+
+    </div>
+  </section>
+  
+  <section id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam condimentum tortor vel turpis sagittis cursus. Curabitur posuere felis et ex pulvinar, sed lacinia urna congue. Proin sed enim sed lacus hendrerit interdum.</p>
+  </section>
+  
+  <section id="contact">
+    <h2>Contact</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="email" placeholder="Your Email">
+      <textarea name="message" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2023 Wedding Photographer. All rights reserved.</p>
+  </footer>
+</body>
+</html>

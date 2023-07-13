@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    <title>Home</title>
+    {% endblock title %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+</head>
+
+<body>
+    <div class="homepage">
+        <nav>
+        <a href="{% url 'home' %}"><li>Home</li></a>
+        <a href="{% url 'mywork' %}"><li>My Works</li></a>
+        <a href="{% url 'about' %}"><li>About Me</li></a>
+        <a href="{% url 'gellery' %}"><li>Gallery</li></a>
+        <a href="{% url 'price' %}"><li>Price</li></a>
+    </nav></div>
+
+
+
+    {% block home %}
+        <section>
+        <div style="width:50%; height: 204px; float:left; text-align:center; padding-top: 200px;">  
+            <p style="font-size:60px; color:#E0BDB6; ">WEDDING<br> PHOTO <br>GRAPHER</p>
+
+        </div>  
+  
+        <div style="background-color: #533633; width:50%; height: 204px; float:left; text-align:center; padding-top: 300px;">  
+  This is the second division to have a vertical alignment.  
+        </div>  
+    </section>
+        {% endblock home %}
+
+
+        {% block fotters %}
+        
+        
+        <footer>   
+
+            <div style="background-color: #533633; ">
+                © Copyright 2030 ongraph - All Rights Reserved
+            </div>
+        </footer>
+    
+        {% endblock fotters %}
+
+</body>
+
+</html>
